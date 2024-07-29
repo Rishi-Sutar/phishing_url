@@ -11,8 +11,8 @@ def connect_to_cassandra():
     # Extracting required secrets
     from dotenv import load_dotenv
     load_dotenv()
-    CLIENT_ID = "ACtdqNDowfnCYhDZDajIpRuz"
-    CLIENT_SECRET = "6Nv3WDx+noCM9Ho1MR2nlGqbssbD9tGieZWuZLqmelyN+YtB3IHa+ia5qe.go72Uezsmh6nBgDxZvCetzxipQaeNqZPCZyihum_lKONrelE+3UnP8Xk3WOjjIuZyUrHP"
+    CLIENT_ID = {{phish.CLIENT_ID}}
+    CLIENT_SECRET = {{phish.CLIENT_SECRET}}
 
     # Cassandra cloud configuration
     cloud_config = {"secure_connect_bundle": "secure-connect-phishing-data.zip"}
