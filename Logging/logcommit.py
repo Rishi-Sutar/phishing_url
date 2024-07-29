@@ -80,13 +80,13 @@ def to_github(
 
 def commit_to_github(commit_message):
     log_directory = "./"
-    repo_owner = "rishabh11336"
-    repo_name = "Log-Phishing-Detection"
+    repo_owner = "Rishi_Sutar"
+    repo_name = "phishing_url"
     branch_name = "main"
     from dotenv import load_dotenv
 
     load_dotenv()
-    github_token = os.environ["GITHUB_TOKEN"]
+    github_token = ${{phish.GIT_TOKEN}}
 
     files = get_changed_files(log_directory)
 
