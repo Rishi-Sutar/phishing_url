@@ -106,3 +106,38 @@ INFO:cassandra.policies:Using datacenter 'us-east1' for DCAwareRoundRobinPolicy 
 INFO:__main__:*****************Prediction for https://www.youtube.com/watch?v=3SRh2nzN2DM&t=252s is Prediction says safe browsing URL *************************
 INFO:werkzeug:127.0.0.1 - - [29/Jul/2024 22:08:02] "POST / HTTP/1.1" 200 -
 INFO:__main__:*****************Prediction for https://www.youtube.com/watch?v=3SRh2nzN2DM&t=252s is Prediction says safe browsing URL *************************
+INFO:werkzeug:127.0.0.1 - - [29/Jul/2024 22:08:14] "POST / HTTP/1.1" 200 -
+WARNING:cassandra.cluster:Downgrading core protocol version from 66 to 65 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:b95723a0-adc6-48c6-8ad5-12fc55228574. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+WARNING:cassandra.cluster:[control connection] Error connecting to 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:b95723a0-adc6-48c6-8ad5-12fc55228574:
+Traceback (most recent call last):
+  File "cassandra\cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra\cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra\cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra\connection.py", line 846, in cassandra.connection.Connection.factory
+  File "C:\Users\Richie\anaconda3\envs\phish\lib\site-packages\cassandra\io\asyncorereactor.py", line 354, in __init__
+    self._connect_socket()
+  File "cassandra\connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('34.138.87.241', 29042)]. Last error: _ssl.c:1105: The handshake operation timed out
+WARNING:cassandra.cluster:Downgrading core protocol version from 65 to 5 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:cc5ddfb9-326c-4aa9-8505-a9ebf502a494. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+ERROR:cassandra.connection:Closing connection <AsyncoreConnection(2805267002128) 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:cc5ddfb9-326c-4aa9-8505-a9ebf502a494> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+WARNING:cassandra.cluster:Downgrading core protocol version from 5 to 4 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:cc5ddfb9-326c-4aa9-8505-a9ebf502a494. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+INFO:cassandra.policies:Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:cc5ddfb9-326c-4aa9-8505-a9ebf502a494'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+WARNING:cassandra.cluster:Found multiple hosts with the same endpoint (746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:cc5ddfb9-326c-4aa9-8505-a9ebf502a494). Excluding peer 10.16.203.5
+INFO:cassandra.cluster:Cassandra host 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:b95723a0-adc6-48c6-8ad5-12fc55228574 removed
+WARNING:cassandra.cluster:[control connection] Error connecting to 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:cc5ddfb9-326c-4aa9-8505-a9ebf502a494:
+Traceback (most recent call last):
+  File "cassandra\cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra\cluster.py", line 3654, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra\cluster.py", line 3651, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra\cluster.py", line 3753, in cassandra.cluster.ControlConnection._refresh_schema
+  File "cassandra\metadata.py", line 140, in cassandra.metadata.Metadata.refresh
+  File "cassandra\metadata.py", line 163, in cassandra.metadata.Metadata._rebuild_all
+  File "cassandra\metadata.py", line 2868, in get_all_keyspaces
+  File "cassandra\metadata.py", line 2518, in get_all_keyspaces
+  File "cassandra\metadata.py", line 2027, in get_all_keyspaces
+  File "cassandra\metadata.py", line 2807, in cassandra.metadata.SchemaParserV4._query_all
+  File "cassandra\connection.py", line 1126, in cassandra.connection.Connection.wait_for_responses
+  File "cassandra\connection.py", line 1124, in cassandra.connection.Connection.wait_for_responses
+  File "cassandra\connection.py", line 1636, in cassandra.connection.ResponseWaiter.deliver
+cassandra.OperationTimedOut: errors=None, last_host=None
+INFO:cassandra.cluster:New Cassandra host <Host: 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:b95723a0-adc6-48c6-8ad5-12fc55228574 us-east1> discovered
