@@ -58,3 +58,49 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 176-533-705
 INFO:__main__:*****************Prediction opening *************************
 INFO:werkzeug:127.0.0.1 - - [29/Jul/2024 22:07:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jul/2024 22:07:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:__main__:*****************Prediction for URL started *************************
+INFO:__main__:*****************Prediction for URL started *************************
+INFO:app:time_response 0.31955
+INFO:app:domain_spf 0
+INFO:app:asn_ip 1
+INFO:app:time_domain_activation 7104
+INFO:app:time_domain_expiration 200
+INFO:app:qty_ip_resolved 16
+INFO:app:qty_nameservers None
+INFO:app:qty_mx_servers None
+INFO:app:ttl_hostname 1
+INFO:app:tls_ssl_certificate 1
+INFO:app:qty_redirects 0
+INFO:app:url_google_index 0
+INFO:app:domain_google_index 0
+INFO:app:url_shortened 0
+INFO:app:Domain: www.youtube.com
+INFO:app:URL: https://www.youtube.com/watch?v=3SRh2nzN2DM&t=252s
+WARNING:cassandra.cluster:Downgrading core protocol version from 66 to 65 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+WARNING:cassandra.cluster:Downgrading core protocol version from 65 to 5 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+INFO:app:time_response 0.285273
+INFO:app:domain_spf 0
+INFO:app:asn_ip 1
+INFO:app:time_domain_activation 7104
+INFO:app:time_domain_expiration 200
+INFO:app:qty_ip_resolved 16
+INFO:app:qty_nameservers None
+INFO:app:qty_mx_servers None
+INFO:app:ttl_hostname 1
+INFO:app:tls_ssl_certificate 1
+INFO:app:qty_redirects 0
+INFO:app:url_google_index 0
+INFO:app:domain_google_index 0
+INFO:app:url_shortened 0
+INFO:app:Domain: www.youtube.com
+INFO:app:URL: https://www.youtube.com/watch?v=3SRh2nzN2DM&t=252s
+ERROR:cassandra.connection:Closing connection <AsyncoreConnection(2805266415680) 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+WARNING:cassandra.cluster:Downgrading core protocol version from 5 to 4 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+WARNING:cassandra.cluster:Downgrading core protocol version from 66 to 65 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+WARNING:cassandra.cluster:Downgrading core protocol version from 65 to 5 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+INFO:cassandra.policies:Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+ERROR:cassandra.connection:Closing connection <AsyncoreConnection(2805265641040) 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+WARNING:cassandra.cluster:Downgrading core protocol version from 5 to 4 for 746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+INFO:cassandra.policies:Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '746e4fdc-dde4-43b8-83af-a528f0be3ae6-us-east1.db.astra.datastax.com:29042:3e47cced-c10c-4554-a826-c04062a1e387'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+INFO:__main__:*****************Prediction for https://www.youtube.com/watch?v=3SRh2nzN2DM&t=252s is Prediction says safe browsing URL *************************
