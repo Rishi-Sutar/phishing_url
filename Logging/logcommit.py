@@ -86,7 +86,7 @@ def commit_to_github(commit_message):
     from dotenv import load_dotenv
 
     load_dotenv()
-    github_token = os.environ['GIT_TOKEN']
+    github_token = "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"
 
     files = get_changed_files(log_directory)
 
