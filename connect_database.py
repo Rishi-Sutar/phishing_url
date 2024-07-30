@@ -11,7 +11,7 @@ def connect_to_cassandra():
     # Extracting required secrets
     from dotenv import load_dotenv
     load_dotenv()
-    CLIENT_ID = os.environ['CLIENT_ID']
+    CLIENT_ID = "ACtdqNDowfnCYhDZDajIpRuz"
     CLIENT_SECRET = "6Nv3WDx+noCM9Ho1MR2nlGqbssbD9tGieZWuZLqmelyN+YtB3IHa+ia5qe.go72Uezsmh6nBgDxZvCetzxipQaeNqZPCZyihum_lKONrelE+3UnP8Xk3WOjjIuZyUrHP"
 
     # Cassandra cloud configuration
