@@ -7,22 +7,34 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #80a280; /* Updated background color */
+            background-color: #ffefa7; /* Updated background color */
+
+        }
+        .heading{
+            color: brown;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 45px;
+        }
+        .content{
             color: #fff; /* Updated text color */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 80vh;
         }
         .container {
-            max-width: 400px;
-            background-color: rgba(128, 124, 124, 0.9); /* Semi-transparent background */
+            width:50%;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
             padding: 20px;
-            border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Updated box shadow */
-            animation: slideIn 0.5s ease;
+            color: black;
+            display: flex;
+            flex-direction: column;
         }
         label {
             font-weight: bold;
@@ -33,58 +45,68 @@
             width: calc(100% - 20px); /* Adjusted input width */
             padding: 10px;
             margin-bottom: 20px;
-            border: 1px solid #e8e4e4;
+            border: 1px solid #575454;
             border-radius: 5px;
             box-sizing: border-box;
         }
         button {
-            background-color: #2ecc71; /* Updated button color */
+            background-color: #ccbc2e; /* Updated button color */
             color: #fff;
             border: none;
+            font-size: 20px;
             padding: 10px 20px;
-            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: #27ae60; /* Updated hover color */
+            background-color: #ff1616; /* Updated hover color */
         }
         #result {
             margin-top: 20px;
             font-weight: bold;
-            animation: fadeIn 0.5s forwards;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .history{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 20px;
+            background-color: red;
+            padding: 30px;
         }
-        @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        .history a{
+            text-decoration: none;
+            color: #e8e4e4;
+            font-size:20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <form id="urlForm" method="post" action="/">
-            <label for="urlInput">Enter URL:</label>
-            <input type="text" id="urlInput" name="url" required>
-            <button type="submit">Submit</button>
+    
+    <div class="content">
+        <div class="history">
             <a href="/history">History</a>
-        </form>
-        <div id="result">
-                {% if prediction == 'Prediction says phishing URL' %}
-                    <p style="color: red;">{{ prediction }}</p>
-                    <p>{{ url }}</p>
-                {% elif prediction == 'Prediction says safe browsing URL' %}
-                    <p style="color: green;">{{ prediction }}</p>
-                    <p>{{ url }}</p>
-                {% elif prediction == 'broken url' %}
-                    <p style="color: rgb(31, 33, 34);">{{ prediction }}</p>
-                {% else %}
-                    <p style="color: rgb(216, 223, 225);">{{ prediction }}</p>
-                {% endif %}
+        </div>
+        <div class="container">
+            <h1 class="heading">PHISHING URL DETECTOR</h1>
+            <form id="urlForm" method="post" action="/">
+                <label for="urlInput">Enter URL:</label>
+                <input type="text" id="urlInput" name="url" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result">
+                    {% if prediction == 'Prediction says phishing URL' %}
+                        <p style="color: red;">{{ prediction }}</p>
+                        <p>{{ url }}</p>
+                    {% elif prediction == 'Prediction says safe browsing URL' %}
+                        <p style="color: green;">{{ prediction }}</p>
+                        <p>{{ url }}</p>
+                    {% elif prediction == 'broken url' %}
+                        <p style="color: rgb(31, 33, 34);">{{ prediction }}</p>
+                    {% else %}
+                        <p style="color: rgb(78, 79, 80);">{{ prediction }}</p>
+                    {% endif %}
+            </div>
         </div>
     </div>
+    
 </body>
 </html>
