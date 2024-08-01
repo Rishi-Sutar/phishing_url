@@ -29,5 +29,3 @@ The project employs various machine learning algorithms tailored to the problem 
 ### Solution Design
 - Complete solution design strategies [**High-Level Design (HLD)**](https://github.com/rishabh11336/Phishing-Domain-Detection-Model/blob/main/High-Level%20Design%20(HLD).pdf) and [**Low-Level Design (LLD)**](https://www.example.com) documents.
 
-
-For more details, refer to the [GitHub repository](https://github.com/rishabh11336/Phishing-detection-ML) for the project.
