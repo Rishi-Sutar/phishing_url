@@ -1,7 +1,7 @@
 # Phishing Domain Detection Project
 
-## Project URL
-[Phishing URL Detector](phishingurl.azurewebsites.net)
+
+- Project URL [Phishing URL Detector](phishingurl.azurewebsites.net)
 
 ## Project Overview
 This project focuses on developing a machine learning solution for detecting phishing domains. Phishing, a prevalent form of cyber fraud, involves attackers impersonating reputable entities to obtain sensitive information. The primary goal is to predict whether domains are real or malicious, thereby enhancing cybersecurity measures.
